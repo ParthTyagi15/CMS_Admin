@@ -14,7 +14,7 @@ const Dashboard = () => {
       try {
         const { data } = await axios.get(
           "https://cms-backend-ss96.onrender.com/api/v1/appointment/getall",
-          { withCredentials: true }
+          // { withCredentials: true }
         );
         setAppointments(data.appointments);
       } catch (error) {
